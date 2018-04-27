@@ -3,6 +3,7 @@
 #include<ctime>
 #include<cstdlib>
 #include<string>
+//11
 using namespace std;
 bool guidence(long int a[][9]) {
 	int check1[10] = { 1,1,2,3,4,5,6,7,8,9 };//check 1 baraye check kardane moraba ha
