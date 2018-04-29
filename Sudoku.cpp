@@ -6,8 +6,9 @@
 //11
 using namespace std;
 bool guidence(long int a[][9]) {
-	int check1[10] = { 1,1,2,3,4,5,6,7,8,9 };//check 1 baraye check kardane moraba ha
+	
 	int checks[10] = { 1,1,2,3,4,5,6,7,8,9 };//checks araye check kardane soton
+	int check1[10] = { 1,1,2,3,4,5,6,7,8,9 };//check 1 baraye check kardane moraba ha
 	int checkr[10] = { 1,1,2,3,4,5,6,7,8,9 };//checkr baraye check kardane radif
 	int p = 0, r = 0, s = 0;
 	bool v = false;
@@ -16,8 +17,9 @@ bool guidence(long int a[][9]) {
 		for (int j = 0; j<9; j++) {
 			for (int o = 0; o<10; o++) {
 				if (o == 0) {
-					check1[o] = 10;
+					
 					checks[o] = 10;
+					check1[o] = 10;
 					checkr[o] = 10;
 				}
 				else {
@@ -243,14 +245,14 @@ int main()
 				cin >> x >> y;
 				if (k[x][y] == 0) {
 					a[x][y] = 0;
-					komaki = true;
+					komaki = true ;
 				}
-				else cout << "shoma ejaze nadarid in adad ra pak konid chon male jadvale asli ast\n";
+				else cout << " shoma ejaze nadarid in adad ra pak konid chon male jadvale asli ast\n ";
 			}
 		komaki = false;
 
 	}
-	cout << "you won";
+	cout << " you won ";
 
 	return 0;
 }
