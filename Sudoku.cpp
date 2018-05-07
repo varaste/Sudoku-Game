@@ -81,14 +81,6 @@ bool guidence(long int a[][9]) {
 							check1[a[x][y]] = 10;
 
 			if (j>5 && i>5)
-				for (int x = 6; x<9; x++)
-					for (int y = 6; y<9; y++)
-						if (a[x][y] != 0)
-							check1[a[x][y]] = 10;
-
-			for (int x = 0; x<9; x++)
-				if (a[i][x] != 0)
-					checks[a[i][x]] = 10;
 
 			for (int x = 0; x<9; x++)
 				if (a[x][j] != 0)
