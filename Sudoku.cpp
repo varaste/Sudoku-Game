@@ -101,18 +101,6 @@ bool guidence(long int a[][9]) {
 	return 1;
 }
 
-//checkkol baraye in ast ke begim jadval betore dorost va kamel por shode ya na
-bool checkkol(long int a[][9]) {
-	int check1[10] = { 0,1,2,3,4,5,6,7,8,9 };
-	for (int i = 0; i < 9; i++) {
-		for (int j = 0; j < 9; j++) {
-
-			for (int y = 0; y < 9; y++) {
-				check1[a[y][j]] = 0;
-			}
-
-			for (int k = 0; k < 10; k++)
-				if (check1[k] != 0)
 					return false;
 			for (int k = 0; k < 10; k++)
 				check1[k] = k;
