@@ -7,11 +7,7 @@
 using namespace std;
 bool guidence(long int a[][9]) {
 	
-	int checks[10] = { 1,1,2,3,4,5,6,7,8,9 };//checks araye check kardane soton
-	int check1[10] = { 1,1,2,3,4,5,6,7,8,9 };//check 1 baraye check kardane moraba ha
-	int checkr[10] = { 1,1,2,3,4,5,6,7,8,9 };//checkr baraye check kardane radif
-	int p = 0, r = 0, s = 0;
-	bool v = false;
+	int checks[10] = { 1,1,2,3,4,5,6
 
 	for (int i = 0; i<9; i++) {
 		for (int j = 0; j<9; j++) {
