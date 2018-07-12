@@ -101,22 +101,7 @@ bool guidence(long int a[][9]) {
 	return 1;
 }
 
-					return false;
-			for (int k = 0; k < 10; k++)
-				check1[k] = k;
-
-			for (int x = 0; x < 9; x++) {
-				check1[a[i][x]] = 0;
-			}
-			for (int k = 0; k < 10; k++)
-				if (check1[k] != 0)
-					return false;
-
-			for (int k = 0; k < 10; k++)
-				check1[k] = k;
-
-		}
-
+	
 	}
 	//ta inja check kardane soton va radif ha tamam shod hala mirim vase moraba ha
 	//dar fore payin baz neshani mikonim
@@ -195,21 +180,7 @@ int main()
 			cout << "\nenter the position you want to add number\n";
 			cin >> x >> y;
 
-			if (k[x][y] == 0) {
-				cout << "\nwhat number do you want to add?\n";
-				cin >> adad;
-				a[x][y] = adad;
-				komaki = true;
-
-			}
-			else cout << "inja nemitavanid adad vared konid";
-		}
-		komaki = false;
-		cout << "\ndo you want to erase a number?\n";
-		cin >> answer;
-
-		if (answer == "yes")
-			while (komaki == false) {
+			if (k[x][y]
 				cout << "enter the position you want to erase\n";
 				cin >> x >> y;
 				if (k[x][y] == 0) {
