@@ -39,22 +39,7 @@ bool guidence(long int a[][9]) {
 						if (a[x][y] != 0)
 							check1[a[x][y]] = 10;
 
-			if (j<3 && i>5)
-				for (int x = 6; x<9; x++)
-					for (int y = 0; y<3; y++)
-						if (a[x][y] != 0)
-							check1[a[x][y]] = 10;
-
-			if (j>2 && j<6 && i<3)
-				for (int x = 3; x<6; x++)
-					for (int y = 3; y<6; y++)
-						if (a[x][y] != 0)
-							check1[a[x][y]] = 10;
-
-	
-
-			if (j>5 && i<3)
-				for (int x = 0; x<3; x++)
+			if (j<3 && i>5)+)
 					for (int y = 6; y<9; y++)
 						if (a[x][y] != 0)
 							check1[a[x][y]] = 10;
@@ -83,14 +68,7 @@ bool guidence(long int a[][9]) {
 
 
 			if (p == 1 && s == 1 && r == 1 && a[i][j] == 0) {
-				cout << "\nguidence:you can add number at the position" << i << " and " << j << endl;
-				v = true;
-			}
-			s = 0;
-			r = 0;
-			p = 0;
-		}
-	}
+				cout << "\nguidence:you can add num
 
 	if (v == false)
 		cout << "no guidence is possible";
@@ -143,10 +121,6 @@ int main()
 	cout << "chand adad mikhahid hazf konid?\n";
 	cin >> n;
 	for (int i = 0; i<n; i++) {
-		rr = rand() % 9;
-		rs = rand() % 9;
-		if (a[rr][rs] != 0)
-			a[rr][rs] = 0;
 		else i--;
 		cout << rr << rs;
 	}
@@ -172,11 +146,6 @@ int main()
 		if (answer == "yes")
 			c = guidence(a);
 
-		while (komaki == false) {
-			cout << "\nenter the position you want to add number\n";
-			cin >> x >> y;
-
-			if (k[x][y]
 				cout << "enter the position you want to erase\n";
 				cin >> x >> y;
 				if (k[x][y] == 0) {
