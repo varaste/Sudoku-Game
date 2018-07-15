@@ -27,14 +27,7 @@ bool guidence(long int a[][9]) {
 
 
 
-			if (j<3 && i<3)
-				for (int x = 0; x<3; x++)
-					for (int y = 0; y<3; y++)
-						if (a[x][y] != 0)
-							check1[a[x][y]] = 10;
-
-			if (j<3 && i>2 && i<6)
-				for (int x = 3; x<6; x++)
+			
 					for (int y = 0; y<3; y++)
 						if (a[x][y] != 0)
 							check1[a[x][y]] = 10;
@@ -51,20 +44,6 @@ bool guidence(long int a[][9]) {
 							check1[a[x][y]] = 10;
 
 			if (j>5 && i>5)
-
-			for (int x = 0; x<9; x++)
-				if (a[x][j] != 0)
-					checkr[a[x][j]] = 10;
-
-
-			for (int m = 0; m<10; m++) {
-				if (check1[m] != 10)
-					p++;
-				if (checkr[m] != 10)
-					r++;
-				if (checks[m] != 10)
-					s++;
-			}
 
 
 			if (p == 1 && s == 1 && r == 1 && a[i][j] == 0) {
@@ -93,19 +72,6 @@ bool guidence(long int a[][9]) {
 				if (check1[k] != 0)
 					return false;
 
-			for (int k = 0; k < 10; k++)
-				check1[k] = k;
-		}
-	}
-
-	return true;
-}
-
-int main()
-{
-	string answer;
-	int rr, rs, n, x, y, adad;//rr=remove radif rs=remove soton
-	long int a[9][9] = { 5,3,4,6,7,8,9,1,2,
 		6, 7, 2, 1, 9, 5, 3, 4, 8 ,
 		1, 9, 8, 3, 4, 2, 5, 6, 7 ,
 		8, 5, 9, 7, 6, 1, 4, 2, 3 ,
@@ -126,21 +92,6 @@ int main()
 	}
 	for (int i = 0; i<9; i++)
 		for (int j = 0; j<9; j++)
-			k[i][j] = a[i][j];
-
-	//hala while asli ra minevisim
-	while (checkkol(a) == false) {
-
-
-		for (int i = 0; i<9; i++) {
-			for (int j = 0; j<9; j++)
-				if (a[i][j] != 0)
-					cout << a[i][j] << " ";
-				else cout << "  ";
-				cout << endl;
-		}
-
-
 		cout << "\ndo you want guidence?\n";
 		cin >> answer;
 		if (answer == "yes")
@@ -158,7 +109,4 @@ int main()
 
 	}
 	cout << " you won ";
-
-	return 0;
-}
 
